@@ -13,9 +13,10 @@ fn next_smaller_number(n: u64) -> Option<u64> {
     if is_sorted {
         None
     } else if v[0] == 0 {
+        // leading zero
         None
     } else {
-        Some(join(&v))
+        Some(v.iter().fold(0, |acc, &d| acc * 10 + d as u64))
     }
 }
 fn next_smaller(v: &mut Vec<u8>, index: usize) -> bool {
@@ -29,22 +30,17 @@ fn next_smaller(v: &mut Vec<u8>, index: usize) -> bool {
         if d1 <= d2 {
             return true;
         } else {
-            // println!("{:?}", v);
-
-            next_smaller_digit(d1, v, index);
-            // println!("{:?}", v);
-
+            move_next_smaller_digit(d1, v, index);
             let slice = &mut v[index + 1..];
             slice.sort_by(|&a, &b| b.cmp(&a));
-            // println!("{:?}", v);
-
             return false;
         }
     } else {
         return false;
     }
 }
-fn next_smaller_digit(d: u8, v: &mut Vec<u8>, start: usize) {
+fn move_next_smaller_digit(d: u8, v: &mut Vec<u8>, start: usize) {
+    // move next smaller digit to front
     let mut next_smaller_index = start;
     let mut next_smaller = 0;
     for i in start..v.len() {
@@ -53,14 +49,11 @@ fn next_smaller_digit(d: u8, v: &mut Vec<u8>, start: usize) {
             next_smaller = v[i];
         }
     }
-
     let tmp = v[start];
     v[start] = v[next_smaller_index];
     v[next_smaller_index] = tmp;
 }
-fn join(v: &Vec<u8>) -> u64 {
-    v.into_iter().fold(0, |acc, &d| acc * 10 + d as u64)
-}
+
 
 fn main() {
     println!("{:?}", next_smaller_number(14808099932685489883));
