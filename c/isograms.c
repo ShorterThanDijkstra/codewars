@@ -18,23 +18,3 @@ bool IsIsogram(const char *string) {
     }
     return true;
 }
-
-void _strcpy(char *s, char *t)
-{
-    int i = 0;
-    while ((s[i] = t[i]) != '\0')
-    {
-        i++;
-    }
-}
-char *lineptr[100];
-int main()
-{
-    char s2[] = "34567";
-    char s1[] = "123";
-    _strcpy(s1, s2);
-    printf("s1:%s\n", s1);
-    printf("s2:%s\n", s2);
-
-    return 0;
-}
