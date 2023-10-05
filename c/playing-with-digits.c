@@ -21,7 +21,3 @@ int digPow(int n, int p) {
         return -1;
     }
 }
-
-int main() {
-
-}
