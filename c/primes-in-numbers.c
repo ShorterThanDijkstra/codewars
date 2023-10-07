@@ -115,10 +115,7 @@ char *factors(int lst) {
     return res;
 }
 
-int main() {
-    char *s = "hello, world%d";
-    char buffer[4];
-    int len = sprintf(buffer, s, 10);
-    puts(buffer);
-//    printf("\n%d", len);
-}
+//int main() {
+//    char name[][15] = {"Illegal month", "Jan", "Feb", "Mar"};
+//
+//}

@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, char *argv[])
-{
-    char* line;
-    getline(line, 100);
-    return 0;
-}
+//int main(int argc, char *argv[]) {
+//    while (--argc > 0 && (*++argv)[0] == '-') {
+//
+//    }
+//    printf("%d\n", argc);
+//}
