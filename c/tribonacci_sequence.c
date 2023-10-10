@@ -17,12 +17,12 @@ long long *tribonacci(const long long signature[3], size_t n) {
     }
     return res;
 }
-
-int main() {
-    size_t n = 10;
-    const long long sig[] = {1, 1, 1};
-    long long *res = tribonacci(sig, n);
-    for (size_t i = 0; i < n; ++i) {
-        printf("%lld ", res[i]);
-    }
-}
+//
+//int main() {
+//    size_t n = 10;
+//    const long long sig[] = {1, 1, 1};
+//    long long *res = tribonacci(sig, n);
+//    for (size_t i = 0; i < n; ++i) {
+//        printf("%lld ", res[i]);
+//    }
+//}
