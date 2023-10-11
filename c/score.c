@@ -14,7 +14,7 @@ int score(const int dice[5]) {
     score = score + counts[5] * 50;
     return score;
 }
-int main() {
-    int dice[] = {1,1,1,3,1};
-    int the_score = score(dice);
-}
+//int main() {
+//    int dice[] = {1,1,1,3,1};
+//    int the_score = score(dice);
+//}

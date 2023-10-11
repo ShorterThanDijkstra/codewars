@@ -8,7 +8,7 @@
 const char *morse[55] = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", "-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.", ".-.-.-", "--..--", "..--..", ".----.", "-.-.--", "-..-.", "-.--.", "-.--.-", ".-...", "---...", "-.-.-.", "-...-", ".-.-.", "-....-", "..--.-", ".-..-.", "...-..-", ".--.-.", "...---..."};
 const char *ascii[55] = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", ",", "?", "'", "!", "/", "(", ")", "&", ":", ";", "=", "+", "-", "_", "\"", "$", "@", "SOS"};
 
-int seach_code(char *code)
+int search_code(char *code)
 {
     for (int i = 0; i < 55; i++)
     {
@@ -40,7 +40,6 @@ char *decode_morse(const char *morse_code)
 
     while (start < len)
     {
-        printf("%c\n", morse_code[start]);
         if (!isspace(morse_code[start]))
         {
             buff[buff_ind] = morse_code[start];
@@ -48,30 +47,24 @@ char *decode_morse(const char *morse_code)
             start += 1;
             continue;
         }
-        printf("1 %d\n", start);
-
-        puts(buff);
         buff[buff_ind] = '\0';
-        int index = seach_code(buff);
+        int index = search_code(buff);
         strcat(res, ascii[index]);
         buff_ind = 0;
         buff[buff_ind] = '\0';
-        printf("2 %d\n", start);
-        puts(res);
 
-        start += 1;
-        if (start < len - 1 && isspace(morse_code[start + 1]))
+        if (start < len - 2 && isspace(morse_code[start + 1]) && isspace(morse_code[start + 2]))
         {
-            printf("3 %c", morse_code[start]);
             strcat(res, " ");
-            start += 1;
+            start += 2;
         }
+        start += 1;
     }
 
     if (buff_ind != 0)
     {
         buff[buff_ind] = '\0';
-        int index = seach_code(buff);
+        int index = search_code(buff);
         strcat(res, ascii[index]);
     }
 

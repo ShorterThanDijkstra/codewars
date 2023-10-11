@@ -38,11 +38,11 @@
 #include <string.h>
 #include <ctype.h>
 
-int main()
-{
-    char *hello = "2222";
-    int t = *(hello + 1) == '\0';
-    printf("%d\n", t);
-    printf("%c\n",  hello[2] );
-
-}
+//int main()
+//{
+//    char *hello = "2222";
+//    int t = *(hello + 1) == '\0';
+//    printf("%d\n", t);
+//    printf("%c\n",  hello[2] );
+//
+//}
