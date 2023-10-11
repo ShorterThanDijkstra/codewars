@@ -1,27 +1,27 @@
-//#include <stdio.h>
-//#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 //
-//struct point {
-//    int x;
-//    int y;
-//};
+// struct point {
+//     int x;
+//     int y;
+// };
 //
-//void addpoint(struct point *p1, struct point *p2) {
-//    p1->x += p2->x;
-//    p1->y += p2->y;
-//}
+// void addpoint(struct point *p1, struct point *p2) {
+//     p1->x += p2->x;
+//     p1->y += p2->y;
+// }
 //
-//void printstruct(struct point p) {
-//    printf("{x: %d, y:%d}", p.x, p.y);
-//}
+// void printstruct(struct point p) {
+//     printf("{x: %d, y:%d}", p.x, p.y);
+// }
 //
-//int main(int argc, char *argv[]) {
-//    struct point p1 = {2, 3};
-//    struct point p2 = {3, 4};
-//    addpoint(&p1, &p2);
-//    printstruct(p1);
-//    char what[] = {'h', 'e', 'l', 'l', 'o'};
-//    char *fuck = what;
+// int main(int argc, char *argv[]) {
+//     struct point p1 = {2, 3};
+//     struct point p2 = {3, 4};
+//     addpoint(&p1, &p2);
+//     printstruct(p1);
+//     char what[] = {'h', 'e', 'l', 'l', 'o'};
+//     char *fuck = what;
 ////    char x = (*fuck)++;
 ////    char y = *(fuck++);
 //    *fuck++ = '2';
@@ -33,3 +33,16 @@
 //    printf("%d ", j);
 //
 //}
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    char *hello = "2222";
+    int t = *(hello + 1) == '\0';
+    printf("%d\n", t);
+    printf("%c\n",  hello[2] );
+
+}

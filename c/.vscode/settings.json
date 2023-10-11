@@ -4,6 +4,9 @@
         "*.tcc": "c",
         "string": "c",
         "istream": "c",
-        "streambuf": "c"
+        "streambuf": "c",
+        "stdlib.h": "c",
+        "ctype.h": "c",
+        "algorithm": "c"
     }
 }
