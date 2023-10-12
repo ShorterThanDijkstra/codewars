@@ -34,15 +34,73 @@
 //
 //}
 
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+// #include <stdio.h>
+// #include <string.h>
+// #include <ctype.h>
 
-//int main()
+// int main()
 //{
-//    char *hello = "2222";
-//    int t = *(hello + 1) == '\0';
-//    printf("%d\n", t);
-//    printf("%c\n",  hello[2] );
+//     char *hello = "2222";
+//     int t = *(hello + 1) == '\0';
+//     printf("%d\n", t);
+//     printf("%c\n",  hello[2] );
 //
-//}
+// }
+
+// #include <stdlib.h>
+// #include <stdio.h>
+// #include <string.h>
+// char *arr[] = {"ba", "abc", "dbca", "edd", "abd", "eafa"};
+
+// int compare_strings(const void *a, const void *b)
+// {
+//     return strcmp(*(const char **)a, *(const char **)b);
+// }
+// int main()
+// {
+//     printf("The unsorted array is: \n");
+//     for (int i = 0; i < 6; i++)
+//     {
+//         printf("%s ", arr[i]);
+//     }
+//     qsort(arr, 6, sizeof(char *), compare_strings);
+//     printf("\nThe sorted array is: \n");
+//     for (int i = 0; i < 6; i++)
+//     {
+//         printf("%s ", arr[i]);
+//     }
+//     puts("\n");
+// }
+
+// #include <stdlib.h>
+// #include <stdio.h>
+// #include <string.h>
+
+// char *arr[] = {"ba", "abc", "dbca", "edd", "abd", "eafa"};
+
+// int main() {
+//     printf("The unsorted array is:\n");
+//     for (int i = 0; i < 6; i++) {
+//         printf("%s ", arr[i]);
+//     }
+
+//     qsort(arr, 6, sizeof(char *), (int (*)(const void *, const void *))strcmp);
+
+//     printf("\nThe sorted array is:\n");
+//     for (int i = 0; i < 6; i++) {
+//         printf("%s ", arr[i]);
+//     }
+//     puts("\n");
+
+//     return 0;
+// }
+
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+int main()
+{
+    char *hello = "hello";
+    char *cpy = strdup(hello);
+    printf("%s\n", cpy);
+}

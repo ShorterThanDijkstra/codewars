@@ -70,8 +70,8 @@ char *decode_morse(const char *morse_code)
 
     return res;
 }
-int main()
-{
-    char *res = decode_morse(".... . -.--   .--- ..- -.. .");
-    puts(res);
-}
+// int main()
+// {
+//     char *res = decode_morse(".... . -.--   .--- ..- -.. .");
+//     puts(res);
+// }
