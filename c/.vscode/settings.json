@@ -9,7 +9,9 @@
         "ctype.h": "c",
         "algorithm": "c",
         "string_view": "c",
-        "cstdlib": "c"
+        "cstdlib": "c",
+        "sstream": "c",
+        "random": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
