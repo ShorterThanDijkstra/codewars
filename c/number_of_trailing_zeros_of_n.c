@@ -10,8 +10,8 @@ long zeros(long n)
     return count;
 }
 
-long main()
-{
-    long res = zeros(100000);
-    printf("%ld\n", res);
-}
+//int main()
+//{
+//    long res = zeros(100000);
+//    printf("%ld\n", res);
+//}
