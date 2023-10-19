@@ -56,10 +56,10 @@ char *incrementString(const char *str) {
     }
 }
 
-int main() {
-    char *s1 = "hell09";
-    incrementString(s1);
-     puts(incrementString(s1));
-    // char c = 'a';
-    // printf("%d\n", atoi(s1+4));
-}
+//int main() {
+//    char *s1 = "hell09";
+//    incrementString(s1);
+//     puts(incrementString(s1));
+//    // char c = 'a';
+//    // printf("%d\n", atoi(s1+4));
+//}
