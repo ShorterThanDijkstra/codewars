@@ -33,6 +33,7 @@ const char **dirReduc(const char *const array[], int length_in, int *length_out)
       Report the length of your array through the 'length_out' pointer.
     */
     if (length_in == 0) {
+        *length_out = 0;
         return NULL;
     }
     const char **reduced = malloc(STACK_SIZE * sizeof(char *));
@@ -50,11 +51,11 @@ const char **dirReduc(const char *const array[], int length_in, int *length_out)
     return reduced;
 }
 
-int main() {
-    const char *arr[] = {"NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"};
-    int len = 0;
-    const char **reduced = dirReduc(arr, 7, &len);
-    for (int i = 0; i < len; ++i) {
-        printf("%s\n", reduced[i]);
-    }
-}
+// int main() {
+//     const char *arr[] = {"NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"};
+//     int len = 0;
+//     const char **reduced = dirReduc(arr, 7, &len);
+//     for (int i = 0; i < len; ++i) {
+//         printf("%s\n", reduced[i]);
+//     }
+// }
