@@ -190,3 +190,12 @@
 //    printf("executing: %s ", cmd);
 //    system(cmd);
 //}
+
+// #include <stdio.h>
+
+// int add1(int n) {
+//   n+1;
+// }
+// int main() {
+//     printf("%d\n", add1(10));
+// }
