@@ -169,27 +169,27 @@
 ////    return 0;
 //////    miscellaneous
 ////}
-//#include <stdlib.h>
-//#include <stdio.h>
-//#include <string.h>
+// #include <stdlib.h>
+// #include <stdio.h>
+// #include <string.h>
 //
-//#define MAX 1024
+// #define MAX 1024
 //
-//int main(int argc, char **argv) {
-//    if (argc == 1) {
-//        return 0;
-//    }
-//    char *cmd = (char *) malloc(MAX * sizeof(char));
-//    int index = 0;
-//    while (argc > 1) {
-//        argv += 1;
-//        argc -= 1;
-//        int len = sprintf(cmd + index, "%s ", *argv);
-//        index += len;
-//    }
-//    printf("executing: %s ", cmd);
-//    system(cmd);
-//}
+// int main(int argc, char **argv) {
+//     if (argc == 1) {
+//         return 0;
+//     }
+//     char *cmd = (char *) malloc(MAX * sizeof(char));
+//     int index = 0;
+//     while (argc > 1) {
+//         argv += 1;
+//         argc -= 1;
+//         int len = sprintf(cmd + index, "%s ", *argv);
+//         index += len;
+//     }
+//     printf("executing: %s ", cmd);
+//     system(cmd);
+// }
 
 // #include <stdio.h>
 
@@ -198,4 +198,42 @@
 // }
 // int main() {
 //     printf("%d\n", add1(10));
+// }
+
+// #include <stdio.h>
+// #include <string.h>
+// int main(int argc, char *argv[])
+// {
+//     char str[] = "hello,lyshark,welcome";
+//     printf("原来元素：%s\n", str);
+
+//     char *ptr = strtok(str, ",");
+//     while (ptr != NULL)
+//     {
+//         printf("切割元素：%s\n", ptr);
+//         ptr = strtok(NULL, ",");
+//     }
+//     printf("原来元素：%s\n", str);
+
+//     return 0;
+// }
+// #include <stdio.h>
+// #include <string.h>
+
+// int main()
+// {
+//     char str[] = "Geeks for Geeks";
+//     char *token;
+//     char *rest = str;
+//     printf("str:%s\n", str);
+//     printf("rest:%s\n", rest);
+
+//     while ((token = strtok_r(rest, " ", &rest)))
+//     {
+//         printf("%s\n", token);
+//         printf("str:%s\n", str);
+//         printf("rest:%s\n", rest);
+//     }
+
+//     return 0;
 // }
