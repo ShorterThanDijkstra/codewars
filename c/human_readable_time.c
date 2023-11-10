@@ -25,8 +25,8 @@ char *human_readable_time(unsigned seconds, char *time_string)
     return time_string; // return it
 }
 
-int main() {
-    char time_string[1024];
-    printf("%s\n", human_readable_time(3599, time_string));
-    printf("%s\n", human_readable_time(45296, time_string));
-}
+// int main() {
+//     char time_string[1024];
+//     printf("%s\n", human_readable_time(3599, time_string));
+//     printf("%s\n", human_readable_time(45296, time_string));
+// }
