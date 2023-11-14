@@ -237,3 +237,13 @@
 
 //     return 0;
 // }
+//#include <stdio.h>
+//
+//int main() {
+//    int a[2][2] = {{1, 3},
+//                   {3, 4}};
+//    printf("%d\n", **a);
+//
+//    int *b = (int *) a;
+//    printf("%d\n", *(b + 3));
+//}
