@@ -32,8 +32,8 @@ int *nbMonths(int startPriceOld, int startPriceNew, int savingperMonth, double p
     return res;
 }
 
-int main()
-{
-    int *res = nbMonths(2000, 8000, 1000, 1.5);
-    printf("[%d, %d]\n", res[0], res[1]);
-}
+//int main()
+//{
+//    int *res = nbMonths(2000, 8000, 1000, 1.5);
+//    printf("[%d, %d]\n", res[0], res[1]);
+//}
