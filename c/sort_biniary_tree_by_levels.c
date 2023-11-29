@@ -42,24 +42,25 @@ int *tree_by_levels(const Tree *tree, size_t *tree_size)
     {
         tree = queue_dequeue(node_que);
         *tree_size += 1;
-        queue_enqueue(int_que, tree->value);
+        queue_enqueue(int_que, (const void *)tree->value);
 
         if (tree->left != NULL)
         {
-            queue_enqueue(node_que, tree->left);
+            queue_enqueue(node_que, (const void *)tree->left);
         }
         if (tree->right != NULL)
         {
-            queue_enqueue(node_que, tree->right);
+            queue_enqueue(node_que, (const void *)tree->right);
         }
     }
-    int* arr = (int *) malloc(*tree_size*sizeof(int));
+    int *arr = (int *)malloc(*tree_size * sizeof(int));
     int i = 0;
-    while (queue_size(int_queue)!=0)
+    while (queue_size(int_que) != 0)
     {
-        arr[i] = queue_dequeue(int_queue);
+        arr[i] = (int) queue_dequeue(int_que);
         i++;
     }
-    
+    free_queue(int_que);
+    free_queue(node_que);
     return arr; // return a heap-allocated array, it will be freed
 }
