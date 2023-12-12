@@ -1,0 +1,278 @@
+2023.12.12 16:33:50 INFO  Started: Metals version 1.1.0 in folders '/home/guest/fun/codewars/scala' for client Visual Studio Code 1.85.0.[0m
+2023.12.12 16:33:54 INFO  no build target found for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2023.12.12 16:33:54 INFO  Running List(/home/guest/.local/share/coursier/bin/scala-cli, setup-ide, /home/guest/fun/codewars/scala)[0m
+2023.12.12 16:33:55 INFO  Attempting to connect to the build server...[0m
+2023.12.12 16:33:55 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.12 16:33:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/guest/fun/codewars/scala/.metals/bsp.trace.json or /home/guest/.cache/metals/bsp.trace.json[0m
+2023.12.12 16:33:55 INFO  BSP server: Starting compilation server[0m
+2023.12.12 16:33:54 WARN  Could not find semantic tokens for: file:///home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:33:57 INFO  time: Connected to build server in 2.24s[0m
+2023.12.12 16:33:57 INFO  Connected to Build server: scala-cli v1.1.0[0m
+2023.12.12 16:33:57 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:33:58 INFO  file:///home/guest/fun/codewars/scala/FindTheParityOutlier.scala:1:1: stale bloop error: Illegal start of toplevel definition
+Find The Parity Outlier
+^^^^[0m
+2023.12.12 16:33:58 INFO  time: Imported build in 1.62s[0m
+2023.12.12 16:33:58 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:33:58 INFO  file:///home/guest/fun/codewars/scala/FindTheParityOutlier.scala:1:1: stale bloop error: Illegal start of toplevel definition
+Find The Parity Outlier
+^^^^[0m
+2023.12.12 16:33:58 INFO  time: compiled scala_bd2c96d2de in 0.15s[0m
+2023.12.12 16:34:00 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip, /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.12.12 16:34:00 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip, /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.12.12 16:34:00 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip, /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.12.12 16:34:00 INFO  time: indexed workspace in 1.55s[0m
+2023.12.12 16:34:00 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:34:00 INFO  file:///home/guest/fun/codewars/scala/FindTheParityOutlier.scala:1:1: stale bloop error: Illegal start of toplevel definition
+Find The Parity Outlier
+^^^^[0m
+2023.12.12 16:34:02 INFO  time: compiled scala_bd2c96d2de in 1.56s[0m
+2023.12.12 16:34:02 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:34:02 INFO  file:///home/guest/fun/codewars/scala/FindTheParityOutlier.scala:1:1: stale bloop error: Illegal start of toplevel definition
+Find The Parity Outlier
+^^^^[0m
+2023.12.12 16:34:02 INFO  time: compiled scala_bd2c96d2de in 0.13s[0m
+2023.12.12 16:34:24 WARN  Could not find semantic tokens for: file:///home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:34:28 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:34:28 INFO  time: compiled scala_bd2c96d2de in 0.31s[0m
+2023.12.12 16:34:28 WARN  Could not find semantic tokens for: file:///home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:34:32 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:34:34 INFO  time: compiled scala_bd2c96d2de in 1.39s[0m
+2023.12.12 16:35:47 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:35:48 INFO  time: compiled scala_bd2c96d2de in 1.05s[0m
+2023.12.12 16:35:48 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:35:52 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:35:53 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:35:55 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:01 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:01 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:02 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:03 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:07 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:08 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:15 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:17 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:20 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:22 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:26 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:27 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:28 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:29 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:29 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:29 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:31 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:32 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:32 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:33 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:38 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:39 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:41 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:36:42 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:37:19 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:37:22 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:37:22 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:37:22 INFO  time: compiled scala_bd2c96d2de in 0.21s[0m
+2023.12.12 16:37:23 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:38:08 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:38:28 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:38:46 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:38:55 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:38:56 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:38:57 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:38:57 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:38:58 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:38:59 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:00 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:01 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:02 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:05 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:07 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:11 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:13 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:14 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:14 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:39:14 INFO  time: compiled scala_bd2c96d2de in 0.19s[0m
+2023.12.12 16:39:15 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:38 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:41 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:44 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:45 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:46 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:47 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:48 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:48 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:39:48 INFO  time: compiled scala_bd2c96d2de in 0.51s[0m
+2023.12.12 16:39:49 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:53 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:54 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:39:55 ERROR Failed to tokenize input for semantic tokens for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala
+scala.meta.tokenizers.TokenizeException: <input>:4: error: Invalid literal number
+    val part1 = integers.filter(_ % 2!=0I)
+                                       ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:820)
+	at scala.meta.internal.tokenizers.LegacyScanner.restOfUncertainToken$1(LegacyScanner.scala:864)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:872)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchZero$1(LegacyScanner.scala:330)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:332)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2023.12.12 16:39:57 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:00 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:40:00 INFO  time: compiled scala_bd2c96d2de in 0.46s[0m
+2023.12.12 16:40:00 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:05 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:06 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:08 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:40:08 INFO  time: compiled scala_bd2c96d2de in 0.35s[0m
+2023.12.12 16:40:08 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:10 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:40:10 INFO  time: compiled scala_bd2c96d2de in 0.31s[0m
+2023.12.12 16:40:11 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:15 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:16 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:18 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:22 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:40:22 INFO  time: compiled scala_bd2c96d2de in 0.3s[0m
+2023.12.12 16:40:23 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+Dec 12, 2023 4:40:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 487
+2023.12.12 16:40:29 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:29 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:29 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:29 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:44 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:46 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:46 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:40:46 INFO  time: compiled scala_bd2c96d2de in 0.29s[0m
+2023.12.12 16:40:47 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:56 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:40:58 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:00 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:01 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:01 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:02 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:02 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:02 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:05 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:06 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:07 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:08 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:13 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:14 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:15 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:15 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:15 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:18 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:18 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:22 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:23 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:24 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:25 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:26 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:27 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:27 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:29 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:31 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:32 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:32 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:33 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:34 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:35 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:37 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:38 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:39 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:40 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:47 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:50 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:51 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:51 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:52 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:52 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:54 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:54 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:55 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:55 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:56 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:57 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:58 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:41:59 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:02 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:04 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:05 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:05 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:42:05 INFO  time: compiled scala_bd2c96d2de in 0.13s[0m
+2023.12.12 16:42:06 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:15 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:23 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:27 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:36 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:37 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:42:37 INFO  time: compiled scala_bd2c96d2de in 0.14s[0m
+2023.12.12 16:42:38 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:42 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:42 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:42 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:42 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:57 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:42:59 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:43:53 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:19 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:23 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:23 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:44:23 INFO  time: compiled scala_bd2c96d2de in 0.12s[0m
+2023.12.12 16:44:24 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:32 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:35 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:36 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:38 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:43 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:44:43 INFO  time: compiled scala_bd2c96d2de in 0.32s[0m
+2023.12.12 16:44:44 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:46 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:49 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:50 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:51 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:52 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:44:52 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:44:52 INFO  time: compiled scala_bd2c96d2de in 0.11s[0m
+2023.12.12 16:44:53 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:45:52 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+Dec 12, 2023 4:46:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1058
+2023.12.12 16:46:05 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:46:07 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:46:11 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:46:11 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:46:11 INFO  time: compiled scala_bd2c96d2de in 0.1s[0m
+2023.12.12 16:46:12 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:46:14 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:46:15 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:46:17 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:46:17 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/FindTheParityOutlier.scala[0m
+2023.12.12 16:46:17 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:46:17 INFO  time: compiled scala_bd2c96d2de in 0.31s[0m
+2023.12.12 16:52:08 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:52:08 INFO  time: compiled scala_bd2c96d2de in 0.24s[0m
+2023.12.12 16:52:10 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.12 16:52:10 INFO  time: compiled scala_bd2c96d2de in 0.23s[0m
