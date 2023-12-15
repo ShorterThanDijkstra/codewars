@@ -1632,3 +1632,1690 @@ scala.meta.tokenizers.TokenizeException: <input>:2: error: unclosed character li
 2023.12.15 18:01:32 INFO  time: compiled scala_bd2c96d2de in 0.13s[0m
 2023.12.15 18:02:47 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
 2023.12.15 18:02:47 INFO  time: compiled scala_bd2c96d2de in 0.34s[0m
+2023.12.15 23:59:35 INFO  Started: Metals version 1.1.0 in folders '/home/maerd_zinbiel/Desktop/codewars/scala' for client Visual Studio Code 1.75.1.[0m
+2023.12.15 23:59:39 INFO  Attempting to connect to the build server...[0m
+2023.12.15 23:59:39 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.15 23:59:39 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:137)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:133)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:176)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$5(MetalsLspService.scala:2196)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$4(MetalsLspService.scala:2196)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:137)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:133)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:176)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$5(MetalsLspService.scala:2196)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$4(MetalsLspService.scala:2196)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.15 23:59:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.16 00:00:39 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.16 00:00:39 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.16 00:00:39 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.16 00:00:39 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:529)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:526)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:529)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:526)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.16 00:00:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.16 00:01:39 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.16 00:01:39 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.16 00:01:39 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.16 00:01:39 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:529)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:526)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:529)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:526)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.16 00:01:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.16 00:02:39 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.16 00:02:39 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.16 00:02:39 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.16 00:02:39 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:529)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:526)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:529)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:526)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.16 00:02:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.16 00:03:39 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.16 00:03:39 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.16 00:03:39 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.16 00:03:39 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:529)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:526)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:529)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:526)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.16 00:03:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.16 00:04:39 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.16 00:04:39 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.16 00:04:39 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.16 00:04:39 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:529)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:526)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:455)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:514)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:529)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:526)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.16 00:04:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.16 00:05:39 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.16 00:05:39 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:588)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:481)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.16 00:05:39 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/PersistentBugger.scala[0m
+2023.12.16 00:05:39 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+2023.12.16 00:21:24 INFO  no build target found for /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 36
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 43
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 49
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 54
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 68
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 70
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 71
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 76
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 77
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 79
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 80
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 83
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 85
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 86
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 88
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 90
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 91
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 94
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 96
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 97
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 99
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 100
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 102
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 103
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 107
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 109
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 115
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 116
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 118
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 120
+Dec 16, 2023 12:21:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 129
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.95s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.94s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.94s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.29s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.15s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.93s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.95s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.92s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.92s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.92s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.23s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.97s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.96s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.96s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.24s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.17s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 15m47s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.12s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.98s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.98s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.98s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.07s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.07s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.02s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.01s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.02s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.03s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.04s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.05s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.02s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.06s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.08s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.1s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.12s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.17s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.2s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.23s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.18s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 2.16s[0m
+2023.12.16 00:21:27 INFO  time: code lens generation in 1.95s[0m
+2023.12.16 00:21:27 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+2023.12.16 00:21:27 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 131
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 132
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 133
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 134
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 135
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 136
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 137
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 138
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 140
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 141
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 142
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 143
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 144
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 145
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 146
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 147
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 148
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 149
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 150
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 151
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 152
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 153
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 154
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 157
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 159
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 161
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 162
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 166
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 167
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 168
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 169
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 170
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 171
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 172
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 174
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 175
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 176
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 177
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 178
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 179
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 180
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 182
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 183
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 184
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 185
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 186
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 187
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 189
+2023.12.16 00:21:27 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 191
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 192
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 193
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 198
+2023.12.16 00:21:27 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 199
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 200
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 201
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 204
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 205
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 206
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 210
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 211
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 212
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 213
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 215
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 216
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 219
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 220
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 222
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 223
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 224
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 226
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 227
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 228
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 229
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 231
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 232
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 233
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 234
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 235
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 236
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 237
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 238
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 239
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 240
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 241
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 242
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 243
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 244
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 245
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 248
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 249
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 254
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 255
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 257
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 258
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 259
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 260
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 261
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 262
+2023.12.16 00:21:27 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 263
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 264
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 265
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 266
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 267
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 268
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 269
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 270
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 271
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 272
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 273
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 278
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 281
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 284
+2023.12.16 00:21:27 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 287
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 288
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 290
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 294
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 295
+2023.12.16 00:21:27 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+2023.12.16 00:21:27 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 301
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 303
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 304
+Dec 16, 2023 12:21:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 305
+Dec 16, 2023 12:21:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 307
+2023.12.16 00:21:29 INFO  time: code lens generation in 1.08s[0m
+2023.12.16 00:21:29 INFO  time: code lens generation in 1.09s[0m
+2023.12.16 00:21:29 INFO  time: code lens generation in 1.13s[0m
+2023.12.16 00:21:29 INFO  time: code lens generation in 1.23s[0m
+2023.12.16 00:21:29 INFO  time: code lens generation in 1.24s[0m
+2023.12.16 00:21:29 INFO  time: code lens generation in 1.25s[0m
+2023.12.16 00:21:29 INFO  time: code lens generation in 1.23s[0m
+2023.12.16 00:21:29 INFO  time: code lens generation in 1.25s[0m
+2023.12.16 00:21:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 320
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 321
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 322
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 324
+2023.12.16 00:21:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+2023.12.16 00:21:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 329
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 330
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 331
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 332
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 333
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 334
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 335
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 336
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 337
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 338
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 339
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 342
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 343
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 344
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 345
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 348
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 349
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 350
+2023.12.16 00:21:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 354
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 355
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 358
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 359
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 360
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 362
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 363
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 365
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 366
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 367
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 369
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 374
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 375
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 376
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 380
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 381
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 382
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 383
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 384
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 386
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 389
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 390
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 391
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 392
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 393
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 394
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 400
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 401
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 402
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 403
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 404
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 405
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 406
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 408
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 412
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 413
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 416
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 417
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 418
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 419
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 420
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 422
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 423
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 424
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 425
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 427
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 428
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 430
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 431
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 433
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 434
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 435
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 436
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 437
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 438
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 439
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 440
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 441
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 442
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 443
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 444
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 445
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 450
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 452
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 453
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 455
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 456
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 457
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 458
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 459
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 460
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 461
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 462
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 463
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 464
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 465
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 466
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 467
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 468
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 469
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 472
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 475
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 476
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 477
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 479
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 480
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 481
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 483
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 484
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 485
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 488
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 489
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 490
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 492
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 493
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 494
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 496
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 497
+2023.12.16 00:21:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 498
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 508
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 509
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 510
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 511
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 512
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 513
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 514
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 515
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 517
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 518
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 519
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 520
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 521
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 522
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 523
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 524
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 525
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 526
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 527
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 528
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 535
+2023.12.16 00:21:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 537
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 538
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 539
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 542
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 544
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 546
+2023.12.16 00:21:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 550
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 551
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 552
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 553
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 554
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 556
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 557
+2023.12.16 00:21:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 561
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 562
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 563
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 564
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 565
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 566
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 567
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 571
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 572
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 575
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 579
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 580
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 582
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 583
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 584
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 587
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 588
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 589
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 592
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 593
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 595
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 596
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 597
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 599
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 600
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 601
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 603
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 604
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 605
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 607
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 608
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 609
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 612
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 614
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 615
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 616
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 618
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 620
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 621
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 624
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 625
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 626
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 627
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 628
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 629
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 630
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 631
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 635
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 636
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 637
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 640
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 641
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 644
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 645
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 646
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 647
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 649
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 650
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 652
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 653
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 654
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 656
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 657
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 660
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 661
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 662
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 665
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 666
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 667
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 669
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 670
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 671
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 673
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 674
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 675
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 676
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 678
+Dec 16, 2023 12:21:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 679
+2023.12.16 00:21:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+2023.12.16 00:21:30 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 680
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 681
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 683
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 684
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 685
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 686
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 687
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 688
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 689
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 690
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 691
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 692
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 693
+2023.12.16 00:21:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+2023.12.16 00:21:30 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 694
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 697
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 698
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 700
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 702
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 706
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 710
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 717
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 718
+Dec 16, 2023 12:21:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 719
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 720
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 721
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 723
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 724
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 725
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 727
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 728
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 729
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 731
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 732
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 733
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 735
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 736
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 737
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 738
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 739
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 742
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 743
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 744
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 745
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 747
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 748
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 749
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 751
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 752
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 753
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 754
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 756
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 757
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 758
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 760
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 761
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 764
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 765
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 766
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 768
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 769
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 770
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 772
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 773
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 774
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 776
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 777
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 778
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 780
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 781
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 782
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 783
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 784
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 785
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 787
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 788
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 789
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 791
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 792
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 793
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 795
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 796
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 797
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 799
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 800
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 801
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 803
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 804
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 805
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 807
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 808
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 809
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 811
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 812
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 813
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 815
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 825
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 829
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 831
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 834
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 837
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 838
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 840
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 843
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 845
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 847
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 851
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 852
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 853
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 861
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 863
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 864
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 865
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 867
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 868
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 869
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 871
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 872
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 873
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 877
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 878
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 879
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 885
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 886
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 887
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 888
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 889
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 892
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 893
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 894
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 898
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 899
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 900
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 902
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 906
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 907
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 908
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 910
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 911
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 912
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 915
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 917
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 918
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 921
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 922
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 923
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 924
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 925
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 926
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 927
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 928
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 929
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 930
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 931
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 933
+2023.12.16 00:21:30 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 934
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 935
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 936
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 937
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 938
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 940
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 944
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 945
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 946
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 947
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 948
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 949
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 950
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 951
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 952
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 953
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 954
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 955
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 957
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 959
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 960
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 962
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 968
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 969
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 971
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 972
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 977
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 978
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 979
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 980
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 981
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 986
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+2023.12.16 00:21:30 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 988
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 989
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 991
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 992
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 993
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 996
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 997
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1001
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1003
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1004
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1007
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1008
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1012
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1015
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1017
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1020
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1021
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1023
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1026
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1027
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1028
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1030
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1031
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1033
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1034
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1035
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1036
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1037
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1038
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1039
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1040
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1041
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1042
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1043
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1044
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1046
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1047
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1048
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1049
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1050
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1051
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1052
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1054
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1055
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1056
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1057
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1058
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1062
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1063
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1064
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1066
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1067
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1068
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1070
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1073
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1074
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1076
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1077
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1079
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1080
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1081
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1082
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1083
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1084
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1087
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1089
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1091
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1092
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1100
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1102
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1103
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1106
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1107
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1108
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1109
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1111
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1112
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1113
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1114
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1116
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1117
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1119
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1123
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1127
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1128
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1129
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1130
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1131
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1135
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1136
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1137
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1138
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1139
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1140
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1141
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1143
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1144
+2023.12.16 00:21:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1149
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1150
+Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1154
