@@ -1528,3 +1528,107 @@ Caused by: java.util.NoSuchElementException: token 100 out of 100
 2023.12.15 11:16:56 INFO  time: compiled scala_bd2c96d2de in 32ms[0m
 2023.12.15 11:16:58 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
 2023.12.15 11:16:58 INFO  time: compiled scala_bd2c96d2de in 0.23s[0m
+2023.12.15 11:40:03 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:40:04 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip, /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.12.15 11:40:04 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip, /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.12.15 11:40:04 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip, /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/src.zip, /usr/lib/jvm/java-17-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.12.15 11:40:04 INFO  time: indexed workspace in 1.06s[0m
+2023.12.15 11:40:06 WARN  Could not find semantic tokens for: file:///home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 11:40:06 WARN  Could not find semantic tokens for: file:///home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 11:41:23 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:41:23 INFO  time: compiled scala_bd2c96d2de in 0.16s[0m
+2023.12.15 11:41:30 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:41:30 INFO  time: compiled scala_bd2c96d2de in 0.1s[0m
+2023.12.15 11:45:18 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:45:18 INFO  time: compiled scala_bd2c96d2de in 85ms[0m
+2023.12.15 11:45:40 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:45:40 INFO  time: compiled scala_bd2c96d2de in 56ms[0m
+2023.12.15 11:45:47 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:45:47 INFO  time: compiled scala_bd2c96d2de in 68ms[0m
+2023.12.15 11:46:01 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:46:01 INFO  time: compiled scala_bd2c96d2de in 0.12s[0m
+Dec 15, 2023 11:46:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5054
+2023.12.15 11:46:16 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:46:16 INFO  time: compiled scala_bd2c96d2de in 38ms[0m
+2023.12.15 11:46:24 WARN  Could not find semantic tokens for: file:///home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 11:46:49 ERROR Failed to tokenize input for semantic tokens for /home/guest/fun/codewars/scala/Diamond.scala
+scala.meta.tokenizers.TokenizeException: <input>:2: error: unclosed character literal
+    ''
+    ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+[0m
+2023.12.15 11:46:52 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:46:52 INFO  time: compiled scala_bd2c96d2de in 0.15s[0m
+2023.12.15 11:46:55 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:46:55 INFO  time: compiled scala_bd2c96d2de in 0.1s[0m
+2023.12.15 11:46:57 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:46:57 INFO  time: compiled scala_bd2c96d2de in 0.18s[0m
+2023.12.15 11:49:35 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:49:35 INFO  time: compiled scala_bd2c96d2de in 0.24s[0m
+2023.12.15 11:49:36 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 11:59:31 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 11:59:38 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 11:59:38 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 11:59:38 INFO  time: compiled scala_bd2c96d2de in 0.58s[0m
+2023.12.15 11:59:39 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 11:59:45 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 11:59:45 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 16:08:13 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 17:04:10 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 17:21:08 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 17:43:58 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 17:44:12 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 17:45:45 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 17:48:00 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 17:48:24 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 17:49:00 WARN  Could not load snapshot text for /home/guest/fun/codewars/scala/Diamond.scala[0m
+2023.12.15 17:49:02 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:49:03 INFO  time: compiled scala_bd2c96d2de in 1.05s[0m
+2023.12.15 17:52:45 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:52:45 INFO  time: compiled scala_bd2c96d2de in 0.12s[0m
+2023.12.15 17:52:57 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:52:57 INFO  time: compiled scala_bd2c96d2de in 49ms[0m
+2023.12.15 17:53:01 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:53:01 INFO  time: compiled scala_bd2c96d2de in 0.2s[0m
+2023.12.15 17:53:03 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:53:03 INFO  time: compiled scala_bd2c96d2de in 0.21s[0m
+2023.12.15 17:53:15 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:53:15 INFO  time: compiled scala_bd2c96d2de in 0.12s[0m
+2023.12.15 17:54:17 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:54:17 INFO  time: compiled scala_bd2c96d2de in 0.29s[0m
+2023.12.15 17:54:19 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:54:19 INFO  time: compiled scala_bd2c96d2de in 0.25s[0m
+2023.12.15 17:54:26 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:54:26 INFO  time: compiled scala_bd2c96d2de in 0.18s[0m
+2023.12.15 17:54:29 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:54:29 INFO  time: compiled scala_bd2c96d2de in 0.17s[0m
+2023.12.15 17:54:32 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 17:54:32 INFO  time: compiled scala_bd2c96d2de in 0.22s[0m
+2023.12.15 18:01:32 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 18:01:32 INFO  time: compiled scala_bd2c96d2de in 0.13s[0m
+2023.12.15 18:02:47 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
+2023.12.15 18:02:47 INFO  time: compiled scala_bd2c96d2de in 0.34s[0m

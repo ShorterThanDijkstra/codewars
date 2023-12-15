@@ -32,10 +32,10 @@ class C:
   def f3 = println(3)
   def f4() = println(4)
 
-@main
-def main() = 
-  val c = C()
-  c.f1
-  c.f2()
-  c.f3
-  c.f4()
+// @main
+// def main() = 
+//   val c = C()
+//   c.f1
+//   c.f2()
+//   c.f3
+//   c.f4()
