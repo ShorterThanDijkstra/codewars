@@ -1632,3 +1632,7 @@ scala.meta.tokenizers.TokenizeException: <input>:2: error: unclosed character li
 2023.12.15 18:01:32 INFO  time: compiled scala_bd2c96d2de in 0.13s[0m
 2023.12.15 18:02:47 INFO  compiling scala_bd2c96d2de (1 scala source)[0m
 2023.12.15 18:02:47 INFO  time: compiled scala_bd2c96d2de in 0.34s[0m
+2023.12.15 18:03:53 INFO  Shutting down server[0m
+2023.12.15 18:03:53 INFO  shutting down Metals[0m
+2023.12.15 18:03:53 INFO  Shut down connection with build server.[0m
+2023.12.15 18:03:53 INFO  Exiting server[0m
