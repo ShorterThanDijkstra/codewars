@@ -3319,3 +3319,787 @@ Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancella
 WARNING: Unmatched cancel notification for request id 1150
 Dec 16, 2023 12:21:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 1154
+2023.12.16 00:23:23 INFO  Shutting down server[0m
+2023.12.16 00:23:23 INFO  shutting down Metals[0m
+2023.12.16 00:23:23 INFO  Exiting server[0m
+2023.12.17 10:13:10 INFO  Started: Metals version 1.2.0 in folders '/home/maerd_zinbiel/Desktop/codewars/scala' for client Visual Studio Code 1.75.1.[0m
+2023.12.17 10:13:11 INFO  Attempting to connect to the build server...[0m
+2023.12.17 10:13:11 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:13:11 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:137)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:135)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:178)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$5(MetalsLspService.scala:2255)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$4(MetalsLspService.scala:2255)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:137)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:135)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:178)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$5(MetalsLspService.scala:2255)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$4(MetalsLspService.scala:2255)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:13:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+Dec 17, 2023 10:13:12 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2023.12.17 10:14:12 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:14:12 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.17 10:14:12 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:14:12 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:14:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:15:12 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:15:12 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.17 10:15:12 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:15:12 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:15:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:16:12 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:16:12 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.17 10:16:12 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:16:12 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:16:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:17:12 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:17:12 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.17 10:17:12 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:17:12 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:17:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:18:12 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:18:12 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.17 10:18:12 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:18:12 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:18:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:18:25 INFO  no build target found for /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2023.12.17 10:18:25 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+Dec 17, 2023 10:18:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+Dec 17, 2023 10:18:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19
+2023.12.17 10:18:25 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+Dec 17, 2023 10:18:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 22
+Dec 17, 2023 10:18:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
+2023.12.17 10:18:25 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:18:25 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+Dec 17, 2023 10:18:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 52
+2023.12.17 10:19:09 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:19:12 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:19:12 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:640)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:533)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:19:12 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:19:12 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/Diamond.scala[0m
+2023.12.17 10:19:20 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:19:21 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:22:32 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:22:34 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:22:55 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:23:18 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:23:20 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+Dec 17, 2023 10:30:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 443
+2023.12.17 10:30:55 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:32:50 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:32:59 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:33:00 ERROR scalafmt: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala:7: error: [dialect scala3] then expected but outdent found
+    }
+     ^[0m
+2023.12.17 10:33:06 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:33:07 ERROR scalafmt: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala:7: error: [dialect scala3] then expected but outdent found
+    }
+     ^[0m
+2023.12.17 10:33:14 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:33:30 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:33:49 WARN  Using indexes to guess the definition of listSquared[0m
+2023.12.17 10:33:49 ERROR scalafmt: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala:8: error: [dialect scala3] then expected but else found
+    }else {
+     ^[0m
+2023.12.17 10:33:50 WARN  Using indexes to guess the definition of listSquared[0m
+2023.12.17 10:33:50 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:33:52 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:33:53 WARN  Using indexes to guess the definition of listSquared[0m
+2023.12.17 10:33:53 ERROR scalafmt: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala:8: error: [dialect scala3] then expected but else found
+    }else {
+     ^[0m
+2023.12.17 10:33:57 ERROR scalafmt: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala:8: error: [dialect scala3] then expected but else found
+    }else {
+     ^[0m
+2023.12.17 10:34:18 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:34:20 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:34:22 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:35:06 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:35:34 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:35:37 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:36:46 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:37:14 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:37:41 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:38:07 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+Dec 17, 2023 10:38:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1281
+2023.12.17 10:39:42 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:40:41 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:43:05 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:43:21 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:43:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:43:39 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:43:41 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:43:47 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:43:55 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:44:04 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:44:13 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+Dec 17, 2023 10:44:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1935
+2023.12.17 10:44:59 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:45:04 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:45:32 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:45:37 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:45:55 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:46:02 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:46:02 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:46:05 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:46:32 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:46:33 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:47:19 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:47:36 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:49:30 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:49:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:49:46 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:49:46 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:50:03 INFO  Shutting down server[0m
+2023.12.17 10:50:03 INFO  shutting down Metals[0m
+2023.12.17 10:50:03 INFO  Exiting server[0m
+2023.12.17 10:51:21 INFO  Started: Metals version 1.2.0 in folders '/home/maerd_zinbiel/Desktop/codewars/scala' for client Visual Studio Code 1.75.1.[0m
+2023.12.17 10:51:22 INFO  Attempting to connect to the build server...[0m
+2023.12.17 10:51:22 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:51:22 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:137)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:135)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:178)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$5(MetalsLspService.scala:2255)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$4(MetalsLspService.scala:2255)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:137)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:135)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:178)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$5(MetalsLspService.scala:2255)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$autoConnectToBuildServer$4(MetalsLspService.scala:2255)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:51:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:51:32 INFO  no build target found for /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2023.12.17 10:52:22 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:52:22 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.17 10:52:22 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:52:22 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:52:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:53:22 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:53:22 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.17 10:53:22 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:53:22 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:53:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:54:22 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:54:22 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.17 10:54:22 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:54:22 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:54:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:54:32 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:54:51 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:54:53 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:55:22 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:55:22 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.17 10:55:22 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:55:22 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:55:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:56:22 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:56:22 WARN  Retrying connection to the build server scala-cli[0m
+2023.12.17 10:56:22 INFO  Running BSP server List(/home/guest/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json, /home/guest/fun/codewars/scala)[0m
+2023.12.17 10:56:22 ERROR Running process '/home/guest/.local/share/coursier/bin/.scala-cli.aux bsp --json-options /home/guest/fun/codewars/scala/.scala-build/ide-options-v2.json /home/guest/fun/codewars/scala' failed
+java.io.IOException: Cannot run program "/home/guest/.local/share/coursier/bin/.scala-cli.aux" (in directory "/home/maerd_zinbiel/Desktop/codewars/scala"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:45)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:96)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:142)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:511)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:566)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:581)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$16.applyOrElse(BuildServerConnection.scala:578)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:56:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maerd_zinbiel/Desktop/codewars/scala/.metals/bsp.trace.json or /home/maerd_zinbiel/.cache/metals/bsp.trace.json[0m
+2023.12.17 10:57:22 ERROR Timeout waiting for 'build/initialize' response[0m
+2023.12.17 10:57:22 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:640)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:533)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2023.12.17 10:57:22 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.31s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.32s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.31s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.32s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.33s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.31s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.31s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 1.82s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.31s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.33s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.33s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.33s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.32s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.31s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.33s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.3s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.34s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.32s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.33s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.34s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.31s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.33s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.31s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.34s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.33s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.33s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.32s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.32s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.32s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.33s[0m
+2023.12.17 10:57:24 INFO  time: code lens generation in 2.32s[0m
+2023.12.17 10:57:30 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:57:32 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:58:30 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 10:58:32 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+Dec 17, 2023 10:59:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 256
+2023.12.17 11:02:21 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:02:28 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:02:51 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:04:41 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:05:13 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+Dec 17, 2023 11:05:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 858
+2023.12.17 11:05:54 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:06:58 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:07:53 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:07:56 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:08:08 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:09:33 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:09:35 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:11:41 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:11:53 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:12:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:16:56 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumSquareDivisors.scala[0m
+2023.12.17 11:17:38 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:17:38 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:17:39 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:18:53 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:19:23 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+Dec 17, 2023 11:19:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1157
+2023.12.17 11:20:06 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+Dec 17, 2023 11:21:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1294
+2023.12.17 11:21:25 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+Dec 17, 2023 11:21:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying parentCheckOk.&&(org.scalameta.`package`.debug(this, parentPrefix, destination))
+found that parentCheckOk is false
+where TermRepeatedImpl = _ *
+where destination = fun
+where parentCheckOk = false
+where parentPrefix = Term.Apply
+where this = _ *
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying parentCheckOk.&&(org.scalameta.`package`.debug(this, parentPrefix, destination))
+found that parentCheckOk is false
+where TermRepeatedImpl = _ *
+where destination = fun
+where parentCheckOk = false
+where parentPrefix = Term.Apply
+where this = _ *
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying parentCheckOk.&&(org.scalameta.`package`.debug(this, parentPrefix, destination))
+found that parentCheckOk is false
+where TermRepeatedImpl = _ *
+where destination = fun
+where parentCheckOk = false
+where parentPrefix = Term.Apply
+where this = _ *
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.Term$Repeated$TermRepeatedImpl.checkParent$8(Trees.scala:240)
+	at scala.meta.Term$Repeated$TermRepeatedImpl.privateCopy(Trees.scala:241)
+	at scala.meta.Term$Apply$.apply(Trees.scala:130)
+	at scala.meta.Term$Apply$.apply(Trees.scala:130)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.processPatAndNextQual(FlatMapToForComprehensionCodeAction.scala:313)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$extractChainedForYield$1(FlatMapToForComprehensionCodeAction.scala:603)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.extractChainedForYield(FlatMapToForComprehensionCodeAction.scala:601)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$codeActionWithApply$1(FlatMapToForComprehensionCodeAction.scala:187)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.codeActionWithApply(FlatMapToForComprehensionCodeAction.scala:179)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$5(FlatMapToForComprehensionCodeAction.scala:61)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$3(FlatMapToForComprehensionCodeAction.scala:53)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$2(FlatMapToForComprehensionCodeAction.scala:52)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.FlatMapToForComprehensionCodeAction.$anonfun$contribute$1(FlatMapToForComprehensionCodeAction.scala:51)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.12.17 11:22:09 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:22:12 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:22:14 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:22:16 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:22:42 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:22:43 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:22:51 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:23:17 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:23:24 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:23:58 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:24:17 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:24:28 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:24:40 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:25:08 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/MultiplicationTable.scala[0m
+2023.12.17 11:31:55 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/OddOrEven.scala[0m
+2023.12.17 11:31:55 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/OddOrEven.scala[0m
+Dec 17, 2023 11:32:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/maerd_zinbiel/Desktop/codewars/scala/.metals/.reports/metals-full/2023-12-17/r_compiler-error_11-32-31-975.md
+Dec 17, 2023 11:33:03 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1921
+2023.12.17 11:33:20 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/OddOrEven.scala[0m
+2023.12.17 11:35:29 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:35:36 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:35:41 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+Dec 17, 2023 11:35:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2024
+2023.12.17 11:38:46 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:39:50 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:40:07 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:40:08 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:40:24 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:40:31 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:41:02 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:41:30 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:41:32 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:42:26 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:42:28 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:43:53 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:44:56 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:44:58 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:45:13 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:46:35 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:47:03 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:52:32 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 11:52:41 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+Dec 17, 2023 11:54:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3219
+2023.12.17 11:55:00 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 12:06:34 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 12:06:52 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 12:06:53 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 12:07:44 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+Dec 17, 2023 12:07:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3682
+2023.12.17 12:07:52 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 12:08:39 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 12:08:48 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 12:09:16 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 12:09:40 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 12:09:56 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 12:09:58 WARN  no build target for: /home/maerd_zinbiel/Desktop/codewars/scala/SumsOfParts.scala[0m
+2023.12.17 15:56:10 INFO  Shutting down server[0m
+2023.12.17 15:56:10 INFO  shutting down Metals[0m
+2023.12.17 15:56:10 INFO  Exiting server[0m
