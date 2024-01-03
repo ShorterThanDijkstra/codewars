@@ -5,8 +5,17 @@ import Debug.Trace (trace)
 findReverseNumber :: Integer -> Integer
 findReverseNumber n = n
 
+findLevel :: Integer -> (Integer, Integer)
+findLevel 0 = (0, 0)
+findLevel n = go n (toInteger 1) (toInteger 9)
+  where
+    go n i bound
+      | n <= bound = (i, n - 1)
+      | odd i = go (n - bound) (i + 1) bound
+      | otherwise = go (n - bound) (i + 1) (10 * bound)
+
 reverseNLen :: Int -> [Int]
-reverseNLen n = 
+reverseNLen n =
   let levels = go 3 [[i * 11 | i <- [1 .. 9]], [1 .. 9], [0]]
    in reverse levels !! n
   where
@@ -30,7 +39,7 @@ findReverseNumber' n = go 0 0
       | isReverse num = if i == n - 1 then num else go (num + 1) (i + 1)
       | otherwise = go (num + 1) i
     isReverse num = reverse (show num) == show num
-    
+
 reverseNLen' :: Int -> [Int]
 reverseNLen' n = go 0
   where
