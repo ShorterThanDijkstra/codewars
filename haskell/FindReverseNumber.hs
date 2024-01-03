@@ -13,27 +13,30 @@ findReverseNumber n = go 0 0
 
 reverseNLen :: Int -> [Int]
 reverseNLen n =
-  let levels = go 0 [[i * 11 | i <- [1 .. 9]], [1 .. 9], [0]]
-   in head levels
+  let levels = go 3 [[i * 11 | i <- [1 .. 9]], [1 .. 9], [0]]
+   in reverse levels !! n
   where
-    go i cache
-      | i == n = cache
+    go n' cache
+      | n' > n = cache
       | otherwise =
-          let inner = collectInner (i - 2) 0 cache
-           in go (i + 1) ([10 ^ (n - 1) * j + i * 10 + j | j <- [1 .. 9], i <- inner] : cache)
+          let inner = collectInner (n' - 2) 0 cache
+              new = [10 ^ (n' - 1) * j + i * 10 + j | j <- [1 .. 9], i <- inner]
+           in go (n' + 1) (new : cache)
     collectInner n base cache
       | n <= 0 = [0]
-      | otherwise = collectInner (n - 2) (base + 1) cache ++ map (\it -> it * 10 ^ base) (reverse cache !! n)
+      | otherwise =
+          collectInner (n - 2) (base + 1) cache
+            ++ map (\it -> it * 10 ^ base) (reverse cache !! n)
 
-reverseNLen' :: Int -> [Int]
-reverseNLen' n = go 0
-  where
-    go i
-      | reverse (show i) == show i =
-          if length (show i) > n
-            then []
-            else
-              if length (show i) == n
-                then i : go (i + 1)
-                else go (i + 1)
-      | otherwise = go (i + 1)
+-- reverseNLen' :: Int -> [Int]
+-- reverseNLen' n = go 0
+--   where
+--     go i
+--       | reverse (show i) == show i =
+--           if length (show i) > n
+--             then []
+--             else
+--               if length (show i) == n
+--                 then i : go (i + 1)
+--                 else go (i + 1)
+--       | otherwise = go (i + 1)
