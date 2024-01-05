@@ -1,9 +1,20 @@
 module ReverseNumber (findReverseNumber) where
 
-import Debug.Trace (trace)
+import Data.Char (digitToInt)
 
 findReverseNumber :: Integer -> Integer
-findReverseNumber n = n
+findReverseNumber 1 = 0
+findReverseNumber n =
+  let (level, offset) = findLevel $ n - 1
+   in mirror level offset
+
+mirror :: Integer -> Integer -> Integer
+mirror level offset =
+  let base = if even level then level `div` 2 - 1 else (level + 1) `div` 2 - 1
+      offset' = offset + 10 ^ base
+      part1 = show offset'
+      part2 = if even level then reverse part1 else tail (reverse part1)
+   in read $ part1 ++ part2
 
 findLevel :: Integer -> (Integer, Integer)
 findLevel 0 = (0, 0)
