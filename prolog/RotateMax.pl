@@ -1,3 +1,4 @@
+% https://www.codewars.com/kata/56a4872cbb65f3a610000026/train/prolog
 rot_i(N, I, R) :-
   Left is N div (10 ^ I),
   Right is N mod (10 ^ (I - 1)),
