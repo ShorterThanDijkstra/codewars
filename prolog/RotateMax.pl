@@ -24,4 +24,8 @@ len_n(N,Len) :- len_n_iter(N, 0, Len).
 
 maxrot(N,Max) :-
   len_n(N,I),
+<<<<<<< HEAD
   rot_iter(N,N,I,Max).
+=======
+  rot_iter(N,N,I,Max).
+>>>>>>> 26cc087026310ef01c29e39b96730ac9dfd24ed0

@@ -12,4 +12,8 @@ find_min_iter([H|T],Min,Res) :-
 find_min([],0).
 find_min([H|T],Res) :- 
   string_length(H,Min),
+<<<<<<< HEAD
   find_min_iter(T,Min,Res).
+=======
+  find_min_iter(T,Min,Res).
+>>>>>>> 26cc087026310ef01c29e39b96730ac9dfd24ed0
