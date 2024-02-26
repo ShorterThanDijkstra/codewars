@@ -1,15 +1,21 @@
 public class BefungeInterpreter { 
-	  public static String interpret(String code) {
+   public static String interpret(String code) {
         String[] split = code.split("\n");
-        char[][] pane = new char[split.length][];
-        for (int i = 0; i < split.length; i++) {
-            pane[i] = split[i].toCharArray();
+        int width = 1000;
+        int length = 1000;
+        char[][] pane = new char[length][width];
+        for (int i = 0; i < length; i++) {
+            pane[i] = new char[width];
+            Arrays.fill(pane[i], ' ');
+            if (i < split.length) {
+                String row = split[i];
+                for (int j = 0; j < row.length(); j++) {
+                    pane[i][j] = row.charAt(j);
+                }
+            }
         }
-        int width = pane[0].length;
-        for (int i = 1; i < pane.length; i++) {
-            width = Math.max(width, pane[i].length);
-        }
-        int length = pane.length;
+
+
         StringBuilder output = new StringBuilder();
         Deque<Integer> stack = new ArrayDeque<>();
 
@@ -31,7 +37,7 @@ public class BefungeInterpreter {
                 assert stack.size() >= 2;
                 Integer pop1 = stack.pop();
                 Integer pop2 = stack.pop();
-                stack.push(pop2 + pop1);
+                stack.push(pop2 - pop1);
             } else if (c == '*') {
                 assert stack.size() >= 2;
                 Integer pop1 = stack.pop();
@@ -138,7 +144,7 @@ public class BefungeInterpreter {
             } else if (c == '\\') {
                 assert stack.size() >= 1;
                 Integer pop1 = stack.pop();
-                if (stack.size() == 1) {
+                if (stack.size() == 0) {
                     stack.push(0);
                     stack.push(pop1);
                 } else {
@@ -166,14 +172,19 @@ public class BefungeInterpreter {
                 int y = stack.pop();
                 int x = stack.pop();
                 Integer v = stack.pop();
-                assert x <= width && x >= 0;
-                assert y <= length && y >= 0;
+                assert x >= 0 && y >= 0;
+                assert x <= length &&
+                        y <= width;
                 pane[x][y] = (char) v.intValue();
             } else if (c == 'g') {
                 assert stack.size() >= 2;
                 int y = stack.pop();
                 int x = stack.pop();
-                stack.push(pane[x][y] + '0');
+                assert x >= 0 && y >= 0;
+                assert x <= length &&
+                        y <= width;
+                stack.push((int) (pane[x][y]));
+
             } else if (c == ' ') {
                 // do nothing
             } else {
@@ -188,8 +199,6 @@ public class BefungeInterpreter {
     }
 
     public static void main(String[] args) {
-        System.out.println(interpret(
-                  "08>:1-:v v *_$.@ \n" +
-                        "  ^    _$>\\:^  ^    _$>\\:^"));
+        System.out.println(interpret("01->1# +# :# 0# g# ,# :# 5# 8# *# 4# +# -# _@"));
     }
 }
