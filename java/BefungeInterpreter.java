@@ -1,4 +1,6 @@
-public class BefungeInterpreter { 
+import java.util.*;
+
+public class BefungeInterpreter {
    public static String interpret(String code) {
         String[] split = code.split("\n");
         int width = 1000;
@@ -173,17 +175,17 @@ public class BefungeInterpreter {
                 int x = stack.pop();
                 Integer v = stack.pop();
                 assert x >= 0 && y >= 0;
-                assert x <= length &&
-                        y <= width;
-                pane[x][y] = (char) v.intValue();
+                assert y <= length &&
+                        x <= width;
+                pane[y][x] = (char) v.intValue();
             } else if (c == 'g') {
                 assert stack.size() >= 2;
                 int y = stack.pop();
                 int x = stack.pop();
                 assert x >= 0 && y >= 0;
-                assert x <= length &&
-                        y <= width;
-                stack.push((int) (pane[x][y]));
+                assert y <= length &&
+                        x <= width;
+                stack.push((int) (pane[y][x]));
 
             } else if (c == ' ') {
                 // do nothing
