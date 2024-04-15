@@ -22,20 +22,28 @@ parseOp ('*' : rest) = (rest, Mul)
 parseOp ('/' : rest) = (rest, Div)
 parseOp ('^' : rest) = (rest, Expo)
 
+isOpStart :: [Char] -> Bool
+isOpStart [] = False
 isOpStart (c : _) = c == '+' || c == '-' || c == '*' || c == '/' || c == '^'
 
 parseExpr :: String -> (String, Expr)
 parseExpr (c : s)
-  | c == '(' = parseParentheses s
+  | c == '(' = let (s', l) = parseParentheses s
+               in if isOpStart s' 
+                  then 
+                    let (s'', op) = parseOp s' 
+                        (s''', r) = parseExpr s'' 
+                    in (s''', op l r)
+                  else (s', l)
   | c <= '9' && c >= '0' =
       let d = ord c - ord '0'
           l = Value d
        in if isOpStart s
           then
               let (s', op) = parseOp s
-               in let (s'', r) = parseExpr s'
-                   in (s'', op l r)
-          else (s, l)
+                  (s'', r) = parseExpr s'
+              in (s'', op l r)
+          else  (s, l)
             
 
 toPostfix :: String -> String
