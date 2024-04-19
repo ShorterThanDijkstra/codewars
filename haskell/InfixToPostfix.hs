@@ -2,8 +2,6 @@ module InfixToPostfix where
 
 import Control.Monad.State (State)
 import Data.Char (ord, chr)
-import Debug.Trace (trace)
-import Text.Read (Lexeme (String))
 
 -- 左结合+优先级：
 --  Expr -> Add
