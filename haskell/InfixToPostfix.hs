@@ -1,7 +1,7 @@
 module InfixToPostfix where
 
 import Control.Monad.State (State)
-import Data.Char (ord)
+import Data.Char (ord, chr)
 import Debug.Trace (trace)
 import Text.Read (Lexeme (String))
 
@@ -63,11 +63,13 @@ parseMulDiv' expr ('/' : s) =
 parseMulDiv' expr s = (s, expr)
 
 parseExpo :: String -> (String, Expr)
-parseExpo s = let (s1, base) = parseTerm s
-              in case s1 of ('^':s2) -> let (s3, power) = parseExpo s2
-                                        in (s3, Expo base power)
-                            _ -> (s1, base)
-
+parseExpo s =
+  let (s1, base) = parseTerm s
+   in case s1 of
+        ('^' : s2) ->
+          let (s3, power) = parseExpo s2
+           in (s3, Expo base power)
+        _ -> (s1, base)
 
 parseTerm :: String -> (String, Expr)
 parseTerm (c : s)
@@ -78,4 +80,14 @@ parseTerm (c : s)
   | otherwise = error $ c : s
 
 toPostfix :: String -> String
-toPostfix = undefined
+toPostfix s =
+  let ("", expr) = parseExpr s
+   in reverse $ toPostfix' [] expr
+
+toPostfix' :: [Char] -> Expr -> [Char]
+toPostfix' stack (Add l r) = '+' : (toPostfix' $ toPostfix'  stack l)  r
+toPostfix' stack (Sub l r) = '-' : (toPostfix' $ toPostfix' stack l) r
+toPostfix' stack (Mul l r) = '*' : (toPostfix' $ toPostfix' stack l) r
+toPostfix' stack (Div l r) = '/' : (toPostfix' $ toPostfix' stack l) r
+toPostfix' stack (Expo b p) = '^' : (toPostfix' $ toPostfix' stack b) p
+toPostfix' stack (Term v) = chr (v + ord '0') : stack
