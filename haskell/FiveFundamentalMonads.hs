@@ -38,10 +38,20 @@ instance Monad (State s) where
         (State h) = f a
      in h s1
 
-instance Monad (Reader s) where
-  return = undefined
-  (Reader g) >>= f = undefined
+instance Monad (Reader cfg) where
+  return :: a -> Reader cfg a
+  return a = Reader $ \cfg -> a
+
+  (>>=) :: Reader cfg a -> (a -> Reader cfg b) -> Reader cfg b
+  (Reader run1) >>= f = Reader $ \cfg ->
+    let a = run1 cfg
+        (Reader run2) = f a
+     in run2 cfg
 
 instance (Monoid w) => Monad (Writer w) where
-  return = undefined
-  (Writer (s, v)) >>= f = undefined
+  return :: (Monoid w) => a -> Writer w a
+  return a = Writer (mempty, a)
+  (>>=) :: (Monoid w) => Writer w a -> (a -> Writer w b) -> Writer w b
+  (Writer (s1, a)) >>= f =
+    let (Writer (s2, b)) = f a
+     in Writer (s1 <> s2, b)
