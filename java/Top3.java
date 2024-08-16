@@ -1,5 +1,6 @@
 public class Top3 { 
-public static List<String> top3(String s) {
+
+    public static List<String> top3(String s) {
         Map<String, Integer> counts = new HashMap<>();
         int idx = 0;
         while (idx < s.length()) {
@@ -8,13 +9,25 @@ public static List<String> top3(String s) {
             counts.put(word, counts.getOrDefault(word, 0) + 1);
             idx = indices[1];
         }
-        String[] top3Words = new String[3];
-        int[] top3Counts = new int[3];
+        String[] top3Words = new String[]{"", "", ""};
+        int[] top3Counts = new int[]{0, 0, 0};
         for (String word : counts.keySet()) {
             Integer count = counts.get(word);
-            reRange(top3Words, top3Counts, 0, word, count);
+            for (int i = 0; i < 3; i++) {
+                if (count >= top3Counts[i]) {
+                    reRange(top3Words, top3Counts, i, word, count);
+                    break;
+                }
+            }
         }
-        return null;
+        List<String > res = new ArrayList<>();
+        for (String word:top3Words) {
+            if ("".equals(word)) {
+                break;
+            }
+            res.add(word);
+        }
+        return res;
     }
 
     private static void reRange(String[] top3Words, int[] top3Counts, int idx, String newWord, int newCount) {
@@ -43,7 +56,6 @@ public static List<String> top3(String s) {
     }
 
     public static void main(String[] args) {
-        String s = "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing. An olla of rather more beef than mutton, a salad on most  nights, scraps on Saturdays, lentils on Fridays, and a pigeon or so extra  on Sundays, made away with three-quarters of his income.";
-        top3(s);
+        top3("  //wont won't won't");
     }
 }
