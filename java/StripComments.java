@@ -1,4 +1,6 @@
-public class StripComments { 
+import java.util.Arrays;
+
+public class StripComments {
 public static String stripComments(String text, String[] commentSymbols) {
         if (text == null || "".equals(text.trim())) {
             return "";

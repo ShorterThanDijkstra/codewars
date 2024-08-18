@@ -1,33 +1,44 @@
-public class Top3 { 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class TopWords {
 
     public static List<String> top3(String s) {
         Map<String, Integer> counts = new HashMap<>();
         int idx = 0;
+        s = s.trim().toLowerCase();
         while (idx < s.length()) {
             int[] indices = word(s, idx);
-            String word = s.substring(indices[0], indices[1]);
-            counts.put(word, counts.getOrDefault(word, 0) + 1);
-            idx = indices[1];
+            int start = indices[0];
+            int end = indices[1];
+            String word = s.substring(start, end);
+            if (!"".equals(word.trim()) && !allApostrophes(word)) {
+                counts.put(word, counts.getOrDefault(word, 0) + 1);
+            }
+            idx = end;
         }
         String[] top3Words = new String[]{"", "", ""};
         int[] top3Counts = new int[]{0, 0, 0};
         for (String word : counts.keySet()) {
             Integer count = counts.get(word);
             for (int i = 0; i < 3; i++) {
-                if (count >= top3Counts[i]) {
+                if (count > top3Counts[i] || (count == top3Counts[i] && word.compareTo(top3Words[i]) < 0)) {
                     reRange(top3Words, top3Counts, i, word, count);
                     break;
                 }
             }
         }
-        List<String > res = new ArrayList<>();
-        for (String word:top3Words) {
+        List<String> words = new ArrayList<>();
+        for (String word : top3Words) {
             if ("".equals(word)) {
                 break;
             }
-            res.add(word);
+
+            words.add(word);
         }
-        return res;
+        return words;
     }
 
     private static void reRange(String[] top3Words, int[] top3Counts, int idx, String newWord, int newCount) {
@@ -37,6 +48,15 @@ public class Top3 {
         }
         top3Words[idx] = newWord;
         top3Counts[idx] = newCount;
+    }
+
+    private static boolean allApostrophes(String word) {
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) != '\'') {
+                return false;
+            }
+        }
+        return true;
     }
 
     private static int[] word(String s, int idx) {
@@ -56,6 +76,6 @@ public class Top3 {
     }
 
     public static void main(String[] args) {
-        top3("  //wont won't won't");
+        System.out.println(top3("'a 'A 'a' a'A' a'a'!"));
     }
 }
