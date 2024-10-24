@@ -174,13 +174,13 @@ public class BinomialExpansion {
     }
 
     public static String expand(String expr) {
-        System.out.println(expr);
         Formula formula = parse(expr);
         return expand(formula);
     }
 
     public static void main(String[] args) {
         String expand = expand("(-m+3)^5");
+        System.out.println(expand);
 
     }
 
