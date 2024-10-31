@@ -14,7 +14,7 @@ import Data.Char (chr, ord)
 --  Term -> Int
 --  Term -> (Expr)
 
--- 消除左递归：
+-- 消除左递归：(这里其实不是左结合了，但是代码写出来是对的)
 --  Expr -> Add
 --  Add -> Mul Add'
 --  Add' -> + Mul Add'

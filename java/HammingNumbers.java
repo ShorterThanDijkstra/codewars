@@ -1,4 +1,7 @@
-public class HammingNumbers { 
+import java.util.ArrayList;
+import java.util.List;
+
+public class HammingNumbers {
    public static long hamming(int n) {
         List<Long> hamms = new ArrayList<>();
         hamms.add(1L);
