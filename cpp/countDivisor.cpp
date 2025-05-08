@@ -13,8 +13,11 @@ int divisors(long long n)
             n = n / idx;
         } else {
             res = res * count;
-            idx += 1;
             count = 1;
+            while (n % idx != 0)
+            {
+                idx += 1;
+            }
         }
     }
     res = res * count;
