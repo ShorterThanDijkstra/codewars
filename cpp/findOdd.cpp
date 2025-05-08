@@ -8,18 +8,14 @@ int findOdd(const vector<int> &numbers)
     assert(numbers.size() > 0);
     vector<int> copy = numbers;
     sort(copy.begin(), copy.end());
-    for (int num : copy) {
-	    cout << num << endl;
-    }
-
     int count = 1;
     int pre = copy.at(0);
     for (size_t i = 1; i < copy.size(); i++)
     {
         int curr = copy.at(i);
-        if (curr != pre && count % 2 == 1)
+        if ((curr != pre) && (count % 2) == 1)
         {
-            return curr;
+            return pre;
         }
         if (curr != pre)
         {
