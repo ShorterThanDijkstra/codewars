@@ -1,6 +1,6 @@
 ;; https://www.codewars.com/kata/56484848ba95170a8000004d/train/clojure
 
-;; (ns gps.core)
+(ns gps.core)
 
 (defn help [x pre max']
   (if (empty? x)

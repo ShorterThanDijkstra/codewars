@@ -1,4 +1,4 @@
-;(ns findeven.core)
+(ns findeven.core)
 
 (defn help [arr left right i]
   (if (>= i (count arr))
